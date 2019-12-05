@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>free_layout</title>
+        <meta charset="utf-8"/>
+    <style>
+      html, * {padding:0; margin:0;}
+
+body {background:url(../images/bg.jpg) no-repeat top center #ada6a0; font-family:Arial,Verdana,Helvetica,sans-serif; font-size:12px;}
+
+a {color:#000;text-decoration:none;}
+
+a:hover{text-decoration:underline;} 
+
+#frame {width:960px; margin:0 auto;}
+
+/* 로고 */
+#logo {width:200px; height:80px; margin:15px auto;}
+
+
+/* 사진 영역 */
+#gallery {
+width:960px;
+height:370px;
+margin:20px auto;
+text-align:center;
+background:rgb(226, 218, 214); -moz-box-shadow:0 0 8px #666;
+-webkit-box-shadow:0 0 8px #666;
+box-shadow:0 0 8px #666;
+}
+#gallery img {padding:10px 0;}
+
+/*네비게이션*/
+
+ .nav {width:100%;height:45px;background:rgb(226, 218, 214);; -moz-box-shadow:0 0 8px #666; -webkit-box-shadow:0 0 8px #666; box-shadow:0 0 8px #666;}
+  .nav ul {list-style:none;}
+  .nav ul li {float:left;font-size:16px; margin:13px 22px;}
+  .nav div {float:right;}
+  .nav p {margin:15px; float:left;}
+  #search {float:right;border:none;}
+
+  #search input {
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  border: 1px solid #CCCCCC;
+  float: left;
+  padding: 8px;
+  width: 285px;
+  margin:5px;
+  }
+  #search input.btn {
+  background: none repeat scroll 0 0 transparent;
+  border: 0 none;
+  margin: 10px 0 0 -40px;
+  padding: 0;
+  width: auto;
+  }
+
+/* 블록*/
+.blocks {
+width:194px;
+float:left;
+margin-right:26px;
+padding:10px;
+height:350px;
+background:rgb(226, 218, 214);
+-moz-box-shadow:0 0 8px #666;
+-webkit-box-shadow:0 0 8px #666;
+box-shadow:0 0 8px #666;
+text-align:justify;
+margin-bottom:15px;
+
+}
+.blocks img {margin-bottom:5px;}
+.more {font-size:12px; float:right; color:#000; margin-top:7px; text-decoration:underline;}
+
+.blocks_l {
+width:194px;
+float:left;
+margin-right:26px;
+padding:10px;
+height:350px;
+background:#fff;
+-moz-box-shadow:0 0 8px #666;
+-webkit-box-shadow:0 0 8px #666;
+box-shadow:0 0 8px #666;
+text-align:justify;
+margin-bottom:15px;
+
+}
+.blocks img {margin-bottom:5px;}
+.more {font-size:12px; float:right; color:#000; margin-top:7px; text-decoration:underline;}
+
+
+
+/* 텍스트 박스 */
+#desc-box {
+height:160px;
+margin:10px auto;
+text-align:center;
+background:rgb(226, 218, 214);
+-moz-box-shadow:0 0 8px #666;
+-webkit-box-shadow:0 0 8px #666;
+box-shadow:0 0 8px #666;
+overflow:hidden;
+padding:10px;
+}
+.thumbnails-div {
+width:200px;
+float:left;
+}
+.thumbnails-div img {
+margin:4px;
+}
+.description {
+float:right;
+width:710px;
+padding:10px;
+text-align:justify;
+}
+.description h3{margin:5px 0;}
+
+#box {
+height:470px;
+margin:10px auto;
+text-align:center;
+background:rgb(226, 218, 214);
+-moz-box-shadow:0 0 8px #666;
+-webkit-box-shadow:0 0 8px #666;
+box-shadow:0 0 8px #666;
+overflow:hidden;
+padding:10px;
+}
+.thumbnails-div {
+width:200px;
+float:left;
+}
+.thumbnails-div img {
+margin:4px;
+}
+.description {
+float:right;
+width:710px;
+padding:10px;
+text-align:justify;
+}
+.description h3{margin:5px 0;}
+
+
+    </style>
+
+ </head>
+
+ <body>
+
+  
+    <div id="frame">
+    
+   <!-- Logo Area Starts -->
+<div id="logo">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="images/logo.gif" alt="logo" />
+  </div>
+  <!-- Logo Area Ends-->
+  <!-- Navigation Starts-->
+
+  <header>
+  <div class="nav">
+  <ul>
+      <li><a href=#c1 class="menuLink">MAIN</a></li>
+      <li><a href=#c2 class="menuLink">ABOUT HOLLYS</a></li>
+      <li><a href=#c3 class="menuLink">NEW MENU</a></li>
+      <li><a href=#c4 class="menuLink">STORE</a></li>
+      <li><a href=#c5 class="menuLink">MEMBERSHIP</a></li>
+
+  </ul>
+  
+  <div id="search">
+     <input type="text" id="s" name="s" onclick="this.value='';" value="Search" />
+     <input type="image" class="btn" id="searchsubmit" value="Search" src="images/search.jpg" name="" />
+  </div>
+
+  </div> 
+
+</header>
+<h1 id="c1"> </h1>
+  <div id="gallery">
+      <img src="images/dk4.jpg" alt="gallery" />
+   </div>
+
+   <h1 id="c2"> ABOUT HOLLYS</h1>
+   <br>
+<div id="desc-box">
+    <div class="thumbnails-div">
+      <img src="images/sdf.jpg" alt="smallthumb" />
+</div>
+    <div class="description"><h3>커피의 즐거움을 만드는 '작은 차이의 미학'</h3>
+    <p>	다양한 토양과 기후에서 자란 커피 원두는 그 속에 각기 다른 맛과 향의 비밀을 숨기고 있습니다.
+        생두를 로스팅하여 에스프레소를 만드는 과정은 단순하고 평범해 보이지만, 사실은 로스팅과 추출법 등의 미묘하고 작은 차이가 
+        커피 맛을 변화시킵니다. <br> 원두에 숨겨진 이러한 커피의 비밀을 하나 하나 밝혀가면서 많은 사람들이 커피와 함께 소중한 순간을 즐기도록 해주는 것이 
+        바로 할리스커피가 추구하는 ‘커피의 즐거움’입니다. <br>오늘도 할리스커피는 전세계의 커피 산지를 연구하고, 원두 본연의 맛을 살리기 위한 수많은 블랜딩을 개발하는 등 다양한 
+        노력을 지속하고 있습니다. 커피가 주는 아름다움을 보다 많은 고객들이 즐길 수 있도록, 매 순간 의미 있는 작은 차이를 
+        만들어가는 할리스커피가 되겠습니다.
+         </p><p><a href="#" class="more">more...</a></p></div>
+    </div>
+
+    <h1 id="c3"> NEW MENU</h1>
+    <br>
+   <div class="blocks">
+      <img src="images/dms1.jpg" alt="thumb" />
+   <p>오곡 율무 할리치노</p> Five Grains Yulmu Hollyccino
+     <p><a href="https://www.hollys.co.kr/menu/hollyccino.do" class="more">more...</a></p>
+     
+   </div>
+
+   <div class="blocks">
+      <img src="images/dms2.jpg" alt="thumb" />
+   <p>오곡 율무차</p> Five Grains Yulmu Tea
+     <p><a href="https://www.hollys.co.kr/menu/signature.do" class="more">more...</a></p>
+   </div>
+
+   <div class="blocks">
+      <img src="images/dms3.jpg" alt="thumb" />
+   <p>더블샷 바닐라 딜라이트</p> Double Shot Vanilla Delight
+    <p><a href="https://www.hollys.co.kr/menu/espresso.do" class="more">more...</a></p>
+   </div>
+
+   <div class="blocks">
+      <img src="images/dms4.jpg" alt="thumb" />
+   <p>봉봉 쇼콜라 할리치노</p> Bonbon Chocolat Hollyccino
+     <p><a href="https://www.hollys.co.kr/menu/hollyccino.do" class="more">more...</a></p>
+   </div>
+
+   <div class="blocks">
+      <img src="images/dms5.jpg" alt="thumb" />
+   <p>청송사과 레몬차</p> Cheongsong Apple Lemon Tea
+     <p><a href="https://www.hollys.co.kr/menu/signature.do" class="more">more...</a></p>
+   </div>
+
+   <div class="blocks">
+      <img src="images/dms6.jpg" alt="thumb" />
+   <p>홀리데이 유자몽차</p> Holiday Yuzu Grapefruit Tea
+     <p><a href="https://www.hollys.co.kr/menu/signature.do" class="more">more...</a></p>
+   </div>
+
+   <div class="blocks">
+      <img src="images/dms7.jpg" alt="thumb" />
+   <p>헤이즐넛 비엔나 커피</p> Hazelnut Vienna Coffee
+     <p><a href="https://www.hollys.co.kr/menu/espresso.do" class="more">more...</a></p>
+   </div>
+
+   <div class="blocks">
+      <img src="images/dms8.jpg" alt="thumb" />
+   <p>프리미엄 블렌드 딥라떼</p>Premium Blend Deep Latte
+     <p><a href="https://www.hollys.co.kr/menu/espresso.do" class="more">more...</a></p>
+   </div>
+    
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<h1 id="c4"> STORE</h1>
+<div id="box">
+    <div class="thumbnails-div">
+
+    <p>	<h3>매장 검색</h3><br><input type="text" placeholder="매장검색" /><input type="submit" value="검색" />
+    </div>
+    <br>
+    <h3>지역검색</h3>
+    <select>
+            <option>시/도</option>
+            <option>서울</option>
+            <option>대전</option>
+            <option>세종</option>
+            <option>충남</option>
+            <option>충북</option>
+            <option>인천</option>
+            <option>강원</option>
+            <option>경기</option>
+            <option>광주</option>
+            <option>전남</option>
+    </select>
+    
+    <select>
+        <option>구/군</option>
+        <option>중구</option>
+        <option>종로구</option>
+        <option>서대문구</option>
+        <option>마포구</option>
+        <option>은평구</option>
+        <option>동대문구</option>
+        <option>중량구</option>
+        <option>도봉구</option>
+        <option>성동구</option>
+
+</select>
+<br><br>
+    <img src="images/dkdk.jpg" >
+
+<br> <br> <br> 
+</select>
+</div>
+
+<br>
+<h1 id="c5"> MEMBERSHIP</h1>
+<br>
+<div class="blocks_l">
+    <img src="images/logo.gif" alt="thumb" />
+    <br><br>
+ <p> <h2>유의사항</h2>
+  <br>
+    3천원 이상 구매 영수증 1건 당 1개의 CROWN(크라운)이 적립됩니다.<br><br>
+    CROWN(크라운)의 유효기간은 적립일로부터 1년간 유지되며 이후 소멸됩니다.<br><br>
+    GOLD와 RED 등급으로 승급하시면 등급은 1년간 유지됩니다.<br><br>
+    모든 쿠폰은 APP 쿠폰 형태로 제공되며, 쿠폰 제공과 등급 변동은 즉시 반영됩니다.<br><br>
+    CROWN 추후 적립의 경우 당일에 한하며, 해당 매장에 영수증을 지참하시어 방문하시면 적립 가능합니다.</p>
+ 
+ </div>
+
+<div class="blocks_l">
+   <img src="images/img_membership_silver.png" alt="thumb" />
+   <br><br>
+   <p> <h3>SILVER </h3>멤버십 회원 가입 시
+    <br><br>
+    - 다양한 멤버십 프로그램 참여 기회 제공<br><br>
+    - 크라운 12개 적립 시,
+    아메리카노(R) FREE 쿠폰 제공<br><br>
+    - 커피MD 포함 1만원 이상 구매 시, 아메리카노(R) 1잔 무료 쿠폰 제공<br><br>
+   
+</div>
+
+<div class="blocks_l">
+   <img src="images/img_membership_gold.png" alt="thumb" />
+   <br><br>
+   <p> <h3>GOLD </h3>CROWN 12개 적립 시
+    <br><br>
+    - 다양한 멤버십 프로그램 참여 기회 제공<br><br>
+    - 크라운 12개 적립 시,
+    아메리카노(R) FREE 쿠폰 제공<br><br>
+    - 커피음료 무료 사이즈업 or 샷 추가 or 시럽 추가 중 택1
+    (본인에 한해 1일 1회 1잔에 한함)<br><br>
+
+</div>
+
+<div class="blocks_l">
+   <img src="images/img_membership_red.png" alt="thumb" />
+   <br><br>
+   <p> <h3>GOLD </h3>CROWN 12개 적립 시
+    <br><br>
+    - VIP KIT 제공 (연 1회, 레드 상위 1%)<br><br>
+    - 할리스커피 아카데미 교육 수강 혜택 (연 1회, 레드 전용 클래스 운영)<br><br>
+    - BIRTHDAY 쿠폰 제공 (제조음료R 1잔 무료)
+    (본인에 한해 1일 1회 1잔에 한함)<br><br>
+   </div>
+   
+       
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <footer>
+      <div class="nav">
+          <p>
+            <a href="dkdk.html">💛</a>
+          </p>
+          <p>
+            <a href="index.html">🧡</a>
+          </p>
+          <p></a> </p>
+          <div>
+          <ul>
+              <li><a href=#c1 class="menuLink">MAIN</a></li>
+              <li><a href=#c2 class="menuLink">ABOUT HOLLYS</a></li>
+              <li><a href=#c3 class="menuLink">NEW MENU</a></li>
+              <li><a href=#c4 class="menuLink">STORE</a></li>
+              <li><a href=#c5 class="menuLink">MEMBERSHIP</a></li>
+
+              </ul>
+          </div>
+          </div>
+
+        </footer>
+  
+
+    </div>
+    </body>
